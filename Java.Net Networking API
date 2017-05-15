@@ -1,0 +1,96 @@
+<p>Java supplies an APIs for all of its network related activities. One of these packages are located within java.net. The java.net package contains classes, special exceptions, enums and interfaces that are made to work together. Any developer that is interested in creating applications that interact with networks must come to terms with at least a few of the java.net classes. This post should give any dev an eagle's eye of what to use when networking in Java.</p>
+
+<p>The following content was derived from Oracle's website. There were a few changes made to simplify each description. The original content can be found <a href="https://docs.oracle.com/javase/7/docs/api/java/net/package-summary.html">here.</a></p>
+
+Now, lets have a look at the two sections of the java.net package.  
+	<li><i>A Low Level API</i>, which deals with the following abstractions:
+<ul style="list-style-type:none;">
+	<li><i>Addresses</i>, which are networking identifiers, like IP addresses.</li>
+	<li><i>Sockets</i>, which are basic bidirectional data communication mechanisms.</li>
+	<li><i>Interfaces</i>, which describe network interfaces.</li>
+</ul>
+</li>
+	<li><i>A High Level API</i>, which deals with the following abstractions:
+<ul style="list-style-type:none;">
+	<li><i>URIs</i>, which represent Universal Resource Identifiers.</li>
+	<li><i>URLs</i>, which represent Universal Resource Locators.</li>
+	<li><i>Connections</i>, which represents connections to the resource pointed to by <i>URLs</i>.</li>
+</ul>
+</li>
+<br />
+<p>Ok, so now we have in overview of what the java.net package has to offer. Read the following list which contains a summary of each class in this special package.
+</p>
+
+<ul>
+	<li>Authenticator: The class Authenticator represents an object that knows how to obtain authentication for a network connection</li>
+	<li>CacheRequest: Represents channels for storing resources in the response cache </li>
+	<li>CacheResponse: Represents channels for retrieving resources from the response cache. </li>
+	<li>ContentHandler: The abstract class that is the superclass of all classes that read an Object from a URLConnection. </li>
+	<li>CookieHandler: A CookieHandler object provides a callback mechanism to hook up a HTTP state management policy implementation into HTTP protocol handler. </li>
+	<li>CookieManager: CookieManager provides a concrete implementation of CookieHandler, which seperates the storage of cookies from the policy surrounding accepting and rejecting cookies. </li>
+	<li>DatagramPacket: This class represents the blueprint for a datagram packet. </li>
+	<li>DatagramSocket: This class represents a socket for sending and recieving datagram packets. The two-way communication link between two programs running on a network has a socket on both ends. A socket is bound to port number so that the UDP layer can identify the application that data is destined to be sent to. An endpoint is a combination of an IP address and a port number. </li>
+	<li>DatagramSocketImpl: An abstract class for Datagram and Multicast socket implementation. </li>
+	<li>HttpCookie: A HttpCookie object represents an http cookie, which carries state information between the server and user. Cookies are stored in your browser, or more specifically, your browser's cache. </li>
+	<li>HttpURLConnection: A URLConnection with support for Http-specific features. </li>
+	<li>IDN: Provides methods to convert internationalized domain names (IDN's) between a normal Unicode representation and an ASCII Compatible Encoding (ACE) representation. </li>
+	<li>Inet4Address: The class that represents an Internet Protocol version 4 address. An example of a IPv4 address would be 127.0.0.1. </li>
+	<li>Inet6Address: The class that represents an Internet Protocol version 6 address. An example of a IPv6 address would be 0:0:0:0:0:0:0:0. </li>
+	<li>InetAddress: This class represents an Internet Protocol(IP) address </li>
+	<li>InetSocketAddress: This class implements an IP Socket Address(IP + port number). It can also be a pair (hostname + port number), in which case an attempt will be made to resolve the hostname. </li>
+	<li>InterfaceAddress: This class represents a NetworkInterface address. </li>
+	<li>JarURLConnection: A URLConnection to a Java Archive file or an entry in a JAR file. </li>
+	<li>MulticastSocket: The multicast datagram socket class is useful for sending and recieving IP multicast packets. Go <a href="http://mobile.enterprisenetworkingplanet.com/netsp/article.php/3623181/Networking-101--Understanding-Multicast-Routing.htm" style="font-size:16px;">here</a><span style="font-size:16px;"> for an introduction to what a multicast packet is.</span></li>
+	<li><span style="font-size:16px;">
+NetPermission: This class is for various network permissions.
+</span></li>
+	<li>
+NetworkInterface: This class is used to represent a network interface in Java. Each NetworkInterface object consists of a name,and a list of IP addresses assigned to this interface.</li>
+	<li>
+PasswordAuthentication: The class PasswordAuthentication is a data holder
+that is used by the class Authenticator.</li>
+	<li>
+Proxy: This class represents a proxy setting, typically a type (http, socks)
+and a socket address.</li>
+	<li>
+ProxySelector: Select the proxy server to use, if any, when connecting to the
+network resource reference by a URL object.</li>
+	<li>
+ResponceCache: Represents implementations of URLConnection caches</li>
+	<li>
+SecureCacheResponse: Represents a cache response originally retreived through
+secure means, such as <a href="">TLS.</a></li>
+	<li>
+ServerSocket: This class is used to represent server sockets.</li>
+	<li>
+Socket: This class is used to represent client sockets.</li>
+	<li>
+SocketAddress: This class represents a socket address with no protocol attachment.</li>
+	<li>
+SocketImpl: An abstract class which is a common superclass of all classes that
+actually implement sockets.</li>
+	<li>
+SocketPermission: Represents a way to access a network via sockets.</li>
+	<li>
+StandardSocketOptions: Defines the standard socket options.</li>
+	<li>
+URI: Represents a Uniform Resource Identifier reference.</li>
+	<li>
+URL: This class represents a <a href="https://techterms.com/definition/url"> Uniform Resource Locator </a> pointer
+to a resource on the World Wide Web.</li>
+	<li>
+URLClassLoader: This class loader is used to load classes and resources from
+the search path of URLs referring to both JAR files and directories.</li>
+	<li>
+URLConnection: An abstract class that is the superclass of all classese that
+represent a communications link between the application and a URL.</li>
+	<li>
+URLDecoder: Acts as a utility class for HTML decoding.</li>
+	<li>
+URLEncoder: Acts as a utility class for HTML encoding.</li>
+	<li>
+URLStreamHandler: An abstract class that is the common superclass for all stream
+protocol handlers.</li>
+</ul>
+<span style="font-size:16px;"></span>
+
